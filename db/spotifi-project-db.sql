@@ -94,18 +94,6 @@ CREATE TABLE `favpodcast` (
   `IDUser` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `favpodcast`
---
-
-INSERT INTO `favpodcast` (`IDCreator`, `IDPodcast`, `IDUser`) VALUES
-(7, 1, 17),
-(7, 1, 24),
-(9, 3, 17),
-(9, 3, 24),
-(10, 4, 24),
-(11, 5, 17);
-
 -- --------------------------------------------------------
 
 --
@@ -117,10 +105,6 @@ CREATE TABLE `favsong` (
   `IDSong` int(11) NOT NULL,
   `IDUser` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `favsong`
---
 
 -- --------------------------------------------------------
 
