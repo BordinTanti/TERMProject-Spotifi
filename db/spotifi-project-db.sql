@@ -122,20 +122,6 @@ CREATE TABLE `favsong` (
 -- Dumping data for table `favsong`
 --
 
-INSERT INTO `favsong` (`IDArtist`, `IDSong`, `IDUser`) VALUES
-(1, 15, 20),
-(2, 5, 24),
-(2, 6, 24),
-(8, 2, 17),
-(9, 8, 17),
-(11, 2, 24),
-(13, 1, 17),
-(15, 4, 17),
-(15, 4, 24),
-(16, 9, 23),
-(17, 10, 23),
-(18, 13, 17);
-
 -- --------------------------------------------------------
 
 --
@@ -284,16 +270,6 @@ CREATE TABLE `transaction` (
   `IDSub` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `transaction`
---
-
-INSERT INTO `transaction` (`IDTransaction`, `Card_Num`, `Email`, `IDUser`, `IDSub`) VALUES
-(1, '1234567899999999', 'test11@gmail.com', 23, '003'),
-(2, '2121212121212121', 'test9@gmail.com', 20, '002'),
-(3, '1212121212121212', 'test13@gmail.com', 24, '002'),
-(4, '0123456789101112', 'deedeebaker8@gmail.com', 17, '003');
-
 -- --------------------------------------------------------
 
 --
@@ -309,29 +285,6 @@ CREATE TABLE `user` (
   `Picture` varchar(100) NOT NULL DEFAULT 'images/picProfile/defaultpic.png',
   `IDSub` varchar(25) NOT NULL DEFAULT '001'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`IDUser`, `Name`, `Email`, `Password`, `level`, `Picture`, `IDSub`) VALUES
-(1, 'Patchara_tee', 'deedeebaker8@gmail.com', '12345678', 'Admin', 'images/picProfile/defaultpic.png', '002'),
-(2, 'test1', 'test1@gmail.com', '87654321', 'User', 'images/picProfile/defaultpic.png', '001'),
-(3, 'test2', 'test2@gmail.com', '45612378', 'User', 'images/picProfile/defaultpic.png', '001'),
-(4, 'test3', 'test3@gmail.com', '24861357', 'User', 'images/picProfile/defaultpic.png', '001'),
-(5, 'test4', 'test4@gmail.com', '25846317', 'User', 'images/picProfile/defaultpic.png', '003'),
-(6, 'test5', 'test5@gmail.com', 'test5555', 'User', 'images/picProfile/defaultpic.png', '001'),
-(7, 'plyvarize', 'plai089@hotmail.co.th', '12122542', 'Admin', 'images/picProfile/defaultpic.png', '001'),
-(8, 'test6', 'test6@gmail.com', 'test6666', 'User', 'images/picProfile/defaultpic.png', '001'),
-(15, 'test7', 'test7@gmail.com', 'test7777', 'Admin', 'images/picProfile/defaultpic.png', '001'),
-(17, 'patchara', 'patchatee@gmail.com', 'dee123456', 'User', 'images/picProfile/ProfilePhoto.jpg', '003'),
-(18, 'Pond_CC', 'Plai1408@gmail.com', '12122542', 'User', 'images/picProfile/87373812_2740503742847699_920026692527849472_n.jpg', '001'),
-(19, 'test8', 'test8@gmail.com', 'test8888', 'User', 'images/picProfile/defaultpic.png', '001'),
-(20, 'test9', 'test9@gmail.com', 'test9999', 'User', 'images/picProfile/defaultpic.png', '002'),
-(21, 'test10', 'test10@gmail.com', 'test1010', 'User', 'images/picProfile/defaultpic.png', '001'),
-(22, 'camilla', 'plai089@hotmail.com', '1212312121', 'User', 'images/picProfile/defaultpic.png', '001'),
-(23, 'test11', 'test11@gmail.com', 'test1111', 'User', 'images/picProfile/87373812_2740503742847699_920026692527849472_n.jpg', '003'),
-(24, 'test12', 'test13@gmail.com', 'test1313', 'User', 'images/picProfile/87373812_2740503742847699_920026692527849472_n.jpg', '002');
 
 --
 -- Indexes for dumped tables
